@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Notes CI/CD Demo</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="panel">
+        <div class="header">
+          <div>
+            <p class="eyebrow">FastAPI REST API</p>
+            <h1>Notes CI/CD Demo</h1>
+          </div>
+          <span id="status" class="status">checking</span>
+        </div>
+
+        <form id="note-form" class="form">
+          <input id="title" name="title" placeholder="Tieu de ghi chu" maxlength="120" required />
+          <textarea id="content" name="content" placeholder="Noi dung" maxlength="4000"></textarea>
+          <button type="submit">Them note</button>
+        </form>
+
+        <div id="notes" class="notes"></div>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
