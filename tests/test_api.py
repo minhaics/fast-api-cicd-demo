@@ -10,7 +10,7 @@ def test_note_crud_flow(tmp_path, monkeypatch):
 
     with TestClient(app) as client:
         health = client.get("/health")
-        assert health.status_code == 500
+        assert health.status_code == 200
         assert health.json() == {"status": "ok"}
 
         created = client.post(
